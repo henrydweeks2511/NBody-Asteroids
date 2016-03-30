@@ -79,12 +79,13 @@ public class Universe {
         // move the bodies
         for (int i = 0; i < N; i++) {
             orbs[i].move(f[i], dt);
-//           if (orbs[i].getR().cartesian(0) > radius){
-//               orbs[i].setR(r);
-//            }
-//           if (orbs[i].getR().cartesian(1) > radius){
-//               orbs[i].setR(r);
-//            }
+           
+            if (orbs[i].getR().cartesian(0) > radius){
+//               orbs[i].setX();
+            }
+           if (orbs[i].getR().cartesian(1) > radius){
+//               orbs[i].setX();
+            }
         } // for
     } // increaseTime( double )
 
